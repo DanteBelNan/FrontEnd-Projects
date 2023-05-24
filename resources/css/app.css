@@ -1,10 +1,19 @@
+body{
+    overflow: hidden;
+}
+
+.navbar{
+    min-height: 3.5vh;
+}
 .main-body {
     display: flex;
 }
 
 .sidebar-right {
-    width: 30%;
+    width: 22.5%;
     border: 4px solid black;
+    background-color: #ccc;
+    min-height: 93.5vh;
     
 }
 
@@ -13,7 +22,26 @@
     flex: 1;
 
     /* Make it scrollable */
-    overflow: auto;
     border: 4px solid black;
+    background-color: #eee;
     overflow-y:scroll;
+    min-height: 93.5vh;
+    max-height: 93.5vh;
 }
+
+.sidebar-left::-webkit-scrollbar {
+    width: 10px; /* Anchura de la barra de desplazamiento */
+  }
+  
+  .sidebar-left::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color de fondo de la pista de la barra de desplazamiento */
+  }
+  
+  .sidebar-left::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color del pulgar de la barra de desplazamiento */
+    border-radius: 9999px;
+  }
+  
+  .sidebar-left::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color del pulgar de la barra de desplazamiento al pasar el cursor por encima */
+  }
