@@ -5,14 +5,24 @@
 <div class="main-body">
     <!-- Sidebar -->
     <aside class="sidebar-right">
-        <p> PROFILE DATA </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
+        <div class="top-profile">
+            Background
+        </div>
+        <div class="profile-photo">
+
+        </div>
+        <div class="profile-data">
+            <span>Dante Beltran</span>
+            <span>26</span>
+            Buenos Aires, Argentina
+    
+            Tecnologias
+    
+            Pasiones
+    
+            Contact buttons
+        </div>
+
         
     </aside>
 
