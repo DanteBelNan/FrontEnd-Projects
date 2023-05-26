@@ -1,5 +1,15 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.ttf') format('ttf'),
+       url('../fonts/Montserrat-Bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
     overflow: hidden;
+    font-size: 1.3vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar{
@@ -11,8 +21,9 @@ body{
 
 .sidebar-right {
     width: 22.5%;
-    border: 4px solid black;
-    background-color: #ccc;
+    border: 0.2vw solid black;
+    border-right: 0vw solid black;
+    background-color: white;
     min-height: 93.5vh;
     
 }
@@ -22,7 +33,7 @@ body{
     flex: 1;
 
     /* Make it scrollable */
-    border: 4px solid black;
+    border: 0.2vw solid black;
     background-color: #eee;
     overflow-y:scroll;
     min-height: 93.5vh;
@@ -48,6 +59,65 @@ body{
 
   .top-profile{
     width: 100%;
-    background-image: url("/public/img/profile-card/bg-pattern-card.svg");
-    background-size: cover;
+    height: 30%;
+    background-color: #555;
   }
+
+  .top-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-photo{
+    width: 100%;
+    position: relative;
+    margin-bottom: -25%;
+  }
+
+  .profile-photo img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+
+    transform: translate(50%, -50%);
+  }
+
+  .profile-data {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .profile-data .name {
+    /* Estilos para el span con la clase name dentro del div profile-data */
+  }
+  
+  .profile-data .age {
+    /* Estilos para el span con la clase age dentro del div profile-data */
+  }
+  
+  .profile-data .location {
+    /* Estilos para el span con la clase location dentro del div profile-data */
+  }
+  
+  .profile-data .tech {
+    text-align: left;
+  }
+  
+  .profile-data .hobbies {
+    /* Estilos para el div con la clase hobbies dentro del div profile-data */
+    text-align: left;
+  }
+  
+  .profile-data .contact {
+    /* Estilos para el div con la clase contact dentro del div profile-data */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
