@@ -121,6 +121,37 @@ a{
   .profile-data .contact {
     /* Estilos para el div con la clase contact dentro del div profile-data */
   }
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    padding: 1vw;
+    background-color: #e9e9e9;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .dropdown-item {
+    padding: 1vw;
+    cursor: pointer;
+  }
+
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
   
   
   

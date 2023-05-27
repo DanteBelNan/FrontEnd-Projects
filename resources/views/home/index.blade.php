@@ -16,10 +16,23 @@
             <div class="age">19</div>
             <div class="location">Buenos Aires, Argentina </div>
             <div class="career">
-                Carrera
+                <div class="dropdown">
+                    <div class="dropwodn-toggle" onclick="toggleDropdown(this)">Carrera </div>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-item" onclick="selectOption(this,1)">opt1 </div>
+                        <div class="dropdown-item" onclick="selectOption(this,2)">opt1 </div>
+                    </div>
+                </div>
             </div>
             <div class="tech">
-            Tecnologias
+                <div class="dropdown">
+                    <div class="dropwodn-toggle" onclick="toggleDropdown(this)"> Tecnologias </div>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-item" onclick="selectOption(this,1)">opt1 </div>
+                        <div class="dropdown-item" onclick="selectOption(this,2)">opt1 </div>
+                    </div>
+                </div>
+           
             </div>
             <div class="hobbies">
             Pasiones
@@ -29,7 +42,8 @@
             Contact buttons
             </div>
         </div>
-
+        <!-- aside Scripts -->
+        <script src="{{ asset('js/dropdown.js') }}"></script> 
         
     </aside>
 
