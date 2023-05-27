@@ -41,7 +41,7 @@ body{
 }
 
 .sidebar-left::-webkit-scrollbar {
-    width: 10px; /* Anchura de la barra de desplazamiento */
+    width: 2vh; /* Anchura de la barra de desplazamiento */
   }
   
   .sidebar-left::-webkit-scrollbar-track {
@@ -99,6 +99,10 @@ body{
   
   .profile-data .location {
     /* Estilos para el span con la clase location dentro del div profile-data */
+  }
+
+  .profile-data .career {
+    text-align: left;
   }
   
   .profile-data .tech {

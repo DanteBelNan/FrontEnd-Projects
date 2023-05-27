@@ -13,8 +13,11 @@
         </div>
         <div class="profile-data">
             <div class="name">Dante Beltran</div>
-            <div class="age">26</div>
+            <div class="age">19</div>
             <div class="location">Buenos Aires, Argentina </div>
+            <div class="career">
+                Carrera
+            </div>
             <div class="tech">
             Tecnologias
             </div>
