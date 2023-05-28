@@ -35,8 +35,15 @@
                         <div class="dropdown-item" onclick="selectOption(this,2)">PHP </div>
                     </div>
             </div>
-            <div class="hobbies">
-            Pasiones
+            <div class="dropdown hobbies">
+                <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    Hobbies
+                    <img src=" {{asset('img/arrows/corner-right-down.svg')}}" alt="arrow">
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="dropdown-item" onclick="selectOption(this,1)">Chess </div>
+                    <div class="dropdown-item" onclick="selectOption(this,2)">Futbol </div>
+                </div>
             </div>
 
             <div class="contact">
