@@ -15,24 +15,25 @@
             <div class="name">Dante Beltran</div>
             <div class="age">19</div>
             <div class="location">Buenos Aires, Argentina </div>
-            <div class="career">
-                <div class="dropdown">
-                    <div class="dropwodn-toggle" onclick="toggleDropdown(this)">Carrera </div>
-                    <div class="dropdown-menu" id="dropdownMenu">
-                        <div class="dropdown-item" onclick="selectOption(this,1)">opt1 </div>
-                        <div class="dropdown-item" onclick="selectOption(this,2)">opt1 </div>
-                    </div>
+            <div class="dropdown career">
+                <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                    Carrera
+                    <img src=" {{asset('img/arrows/corner-right-down.svg')}}" alt="arrow">
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="dropdown-item" onclick="selectOption(this,1)">UTN blabla </div>
+                    <div class="dropdown-item" onclick="selectOption(this,2)">SECUNDARIO blabla </div>
                 </div>
             </div>
-            <div class="tech">
-                <div class="dropdown">
-                    <div class="dropwodn-toggle" onclick="toggleDropdown(this)"> Tecnologias </div>
-                    <div class="dropdown-menu" id="dropdownMenu">
-                        <div class="dropdown-item" onclick="selectOption(this,1)">opt1 </div>
-                        <div class="dropdown-item" onclick="selectOption(this,2)">opt1 </div>
+            <div class="dropdown tech">
+                    <div class="dropdown-toggle" onclick="toggleDropdown(this)">
+                        Tecnologias
+                        <img src=" {{asset('img/arrows/corner-right-down.svg')}}" alt="arrow">
                     </div>
-                </div>
-           
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-item" onclick="selectOption(this,1)">C# </div>
+                        <div class="dropdown-item" onclick="selectOption(this,2)">PHP </div>
+                    </div>
             </div>
             <div class="hobbies">
             Pasiones
