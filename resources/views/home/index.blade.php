@@ -18,27 +18,31 @@
             <div class="dropdown career">
                 <div class="dropdown-toggle" onclick="toggleDropdown(this)">
                     Carrera
-                    <img src=" {{asset('img/arrows/corner-right-down.svg')}}" alt="arrow">
+                    <img src=" {{asset('img/arrows/chevron-down.svg')}}" class="unrotated" alt="arrow">
                 </div>
                 <div class="dropdown-menu" id="dropdownMenu">
-                    <div class="dropdown-item" onclick="selectOption(this,1)">UTN blabla </div>
-                    <div class="dropdown-item" onclick="selectOption(this,2)">SECUNDARIO blabla </div>
+                    <div class="dropdown-item" onclick="selectOption(this,1)">UTN - Tecnicatura Universitaria en Programación </div>
+                    <div class="dropdown-item" onclick="selectOption(this,2)"> </div>
                 </div>
             </div>
             <div class="dropdown tech">
                     <div class="dropdown-toggle" onclick="toggleDropdown(this)">
                         Tecnologias
-                        <img src=" {{asset('img/arrows/corner-right-down.svg')}}" alt="arrow">
+                        <img src=" {{asset('img/arrows/chevron-down.svg')}}" class="unrotated" alt="arrow">
                     </div>
                     <div class="dropdown-menu" id="dropdownMenu">
                         <div class="dropdown-item" onclick="selectOption(this,1)">C# </div>
-                        <div class="dropdown-item" onclick="selectOption(this,2)">PHP </div>
+                        <div class="dropdown-item" onclick="selectOption(this,2)">C++ </div>
+                        <div class="dropdown-item" onclick="selectOption(this,3)">PHP </div>
+                        <div class="dropdown-item" onclick="selectOption(this,4)">HTML </div>
+                        <div class="dropdown-item" onclick="selectOption(this,5)">CSS </div>
+                        <div class="dropdown-item" onclick="selectOption(this,6)">SQL </div>
                     </div>
             </div>
             <div class="dropdown hobbies">
                 <div class="dropdown-toggle" onclick="toggleDropdown(this)">
                     Hobbies
-                    <img src=" {{asset('img/arrows/corner-right-down.svg')}}" alt="arrow">
+                    <img src=" {{asset('img/arrows/chevron-down.svg')}}" class="unrotated" alt="arrow">
                 </div>
                 <div class="dropdown-menu" id="dropdownMenu">
                     <div class="dropdown-item" onclick="selectOption(this,1)">Chess </div>
@@ -47,7 +51,10 @@
             </div>
 
             <div class="contact">
-            Contact buttons
+                <div>Contact me </div>
+                <img src=" {{asset('img/contact-button/linkedin.svg')}}">
+                <img src=" {{asset('img/contact-button/mail.svg')}}">
+                <img src=" {{asset('img/contact-button/smartphone.svg')}}">
             </div>
         </div>
         <!-- aside Scripts -->
