@@ -12,17 +12,17 @@
             <img src=" {{asset('img/profile-card/bg-pattern-top.svg')}}" alt="profile-top-img">
         </div>
         <div class="profile-data">
-            <div class="name">Dante Beltran</div>
+            <div class="name">Dante Beltrán</div>
             <div class="age">19</div>
             <div class="location">Buenos Aires, Argentina </div>
             <div class="dropdown career">
                 <div class="dropdown-toggle" onclick="toggleDropdown(this)">
-                    Carrera
+                    Estudios
                     <img src=" {{asset('img/arrows/chevron-down.svg')}}" class="unrotated" alt="arrow">
                 </div>
-                <div class="dropdown-menu" id="dropdownMenu">
-                    <div class="dropdown-item" onclick="selectOption(this,1)">UTN - Tecnicatura Universitaria en Programación </div>
-                    <div class="dropdown-item" onclick="selectOption(this,2)"> </div>
+                <div class="dropdown-menu hidden" id="dropdownMenu">
+                    <div class="dropdown-item" onclick="selectOption(this,1)">UTN-FRGP Tecnicatura Universitaria en Programación </div>
+                    <div class="dropdown-item" onclick="selectOption(this,2)">UTN-BA Machine Learning con Python </div>
                 </div>
             </div>
             <div class="dropdown tech">
@@ -30,7 +30,7 @@
                         Tecnologias
                         <img src=" {{asset('img/arrows/chevron-down.svg')}}" class="unrotated" alt="arrow">
                     </div>
-                    <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="dropdown-menu hidden" id="dropdownMenu">
                         <div class="dropdown-item" onclick="selectOption(this,1)">C# </div>
                         <div class="dropdown-item" onclick="selectOption(this,2)">C++ </div>
                         <div class="dropdown-item" onclick="selectOption(this,3)">PHP </div>
@@ -44,9 +44,10 @@
                     Hobbies
                     <img src=" {{asset('img/arrows/chevron-down.svg')}}" class="unrotated" alt="arrow">
                 </div>
-                <div class="dropdown-menu" id="dropdownMenu">
-                    <div class="dropdown-item" onclick="selectOption(this,1)">Chess </div>
+                <div class="dropdown-menu hidden" id="dropdownMenu">
+                    <div class="dropdown-item" onclick="selectOption(this,1)">Ajedrez </div>
                     <div class="dropdown-item" onclick="selectOption(this,2)">Futbol </div>
+                    <div class="dropdown-item" onclick="selectOption(this,2)">Basquet </div>
                 </div>
             </div>
 

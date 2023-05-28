@@ -137,6 +137,7 @@ a{
   
 .profile-data .contact {
     /* Estilos para el div con la clase contact dentro del div profile-data */
+    margin-top: 5vh;
 }
 
 .dropdown{
@@ -157,7 +158,6 @@ a{
 
 .rotated {
     transform: rotate(180deg);
-    
     transition: transform 0.3s ease; /* Ajusta la duración y el efecto de transición según tus preferencias */
 }
 
@@ -168,11 +168,23 @@ a{
 }
   
 .dropdown-menu {
-    display: none;
+    display: block;
     background-color: #ffffff;
     box-shadow: 0 0.4vw 0.6vw rgba(0, 0, 0, 0.1);
     width: 100%;
     text-align: center;
+    max-height: fit-content;
+    overflow: hidden;
+}
+
+.hidden{
+    max-height: 0vh;
+    transition: max-height 0.3s ease-out; /* Ajusta la duración y el efecto de transición según tus preferencias */
+}
+
+.shown{
+    max-height: 100vh;
+    transition: max-height 0.3s ease-in; /* Ajusta la duración y el efecto de transición según tus preferencias */
 }
 
 .dropdown-item {

@@ -2,15 +2,15 @@ function toggleDropdown(dropdownToggle) {
     var dropdownMenu = dropdownToggle.nextElementSibling;
     var dropdownImg = dropdownToggle.querySelector('img');
   
-    dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
-    dropdownImg.classList.toggle('rotated');
+    //dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+    //dropdownMenu.style.maxHeight = (dropdownMenu.style.display === "0vh") ? "fit-content" : "0vh";
 
-    if (!dropdownImg.classList.contains('rotated')) {
-        dropdownImg.classList.add('unrotated');
-    }
-    if(dropdownImg.classList.contains('rotated')){
-        dropdownImg.classList.remove('unrotated');
-    }
+    dropdownMenu.classList.toggle('hidden');
+    dropdownMenu.classList.toggle('shown');
+
+    dropdownImg.classList.toggle('rotated');
+    dropdownImg.classList.toggle('unrotated');
+
 
   }
   
