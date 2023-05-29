@@ -98,6 +98,11 @@ a{
 }
 
 .profile-photo img{
+    border-radius: 50%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo img{
     width: 50%;
     height: 50%;
     object-fit: cover;

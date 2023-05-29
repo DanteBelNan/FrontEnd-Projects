@@ -7,9 +7,11 @@
     <aside class="sidebar-left">
         <div class="top-profile">
             <img src=" {{asset('img/profile-card/bg-pattern-card.svg')}}" alt="profile-top-img">
+            
         </div>
         <div class="profile-photo">
-            <img src=" {{asset('img/profile-card/bg-pattern-top.svg')}}" alt="profile-top-img">
+            <!--<img src=" {{asset('img/profile-card/bg-pattern-top.svg')}}" alt="profile-top-img">-->
+            <img src=" {{asset('img/profile-card/profile-photo.jpg')}}" alt="profile-photo">
         </div>
         <div class="profile-data">
             <div class="name">Dante Beltrán</div>
