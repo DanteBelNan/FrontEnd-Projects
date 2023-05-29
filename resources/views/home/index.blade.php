@@ -36,7 +36,8 @@
                         <div class="dropdown-item" onclick="selectOption(this,3)">PHP </div>
                         <div class="dropdown-item" onclick="selectOption(this,4)">HTML </div>
                         <div class="dropdown-item" onclick="selectOption(this,5)">CSS </div>
-                        <div class="dropdown-item" onclick="selectOption(this,6)">SQL </div>
+                        <div class="dropdown-item" onclick="selectOption(this,6)">JS </div>
+                        <div class="dropdown-item" onclick="selectOption(this,7)">SQL </div>
                     </div>
             </div>
             <div class="dropdown hobbies">
