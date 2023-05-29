@@ -4,7 +4,7 @@
 
 <div class="main-body">
     <!-- Sidebar -->
-    <aside class="sidebar-right">
+    <aside class="sidebar-left">
         <div class="top-profile">
             <img src=" {{asset('img/profile-card/bg-pattern-card.svg')}}" alt="profile-top-img">
         </div>
@@ -53,9 +53,15 @@
 
             <div class="contact">
                 <div>Contact me </div>
-                <img src=" {{asset('img/contact-button/linkedin.svg')}}">
-                <img src=" {{asset('img/contact-button/mail.svg')}}">
-                <img src=" {{asset('img/contact-button/smartphone.svg')}}">
+                <a target="_blank" href="https://www.linkedin.com/in/dante-beltran-bb9626216/"> 
+                    <img src=" {{asset('img/contact-button/linkedin.svg')}}">
+                </a>
+                <a target="_blank" href="mailto:dantebelnan@gmail.com"> 
+                    <img src=" {{asset('img/contact-button/mail.svg')}}">
+                </a>
+                <a target="_blank" href="tel:+541123738883"> 
+                    <img src=" {{asset('img/contact-button/smartphone.svg')}}">
+                </a>
             </div>
         </div>
         <!-- aside Scripts -->
@@ -64,7 +70,7 @@
     </aside>
 
     <!-- Main -->
-    <main class="sidebar-left">
+    <main class="sidebar-right">
         <p> CARDS SPACE </p> <br>
         <p> lorem ipsum </p> <br>
         <p> lorem ipsum </p> <br>
