@@ -74,22 +74,26 @@
 
     <!-- Main -->
     <main class="sidebar-right">
-        <p> CARDS SPACE </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
-        <p> lorem ipsum </p> <br>
+        <div class="card-container">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+
+            </div>
+        </div>
 
         
     </main>
