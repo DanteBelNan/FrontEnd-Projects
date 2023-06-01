@@ -35,7 +35,7 @@ class ProjectsController extends Controller
             $image->save($path);
             $project->img = '/img/projects/' . $filename;
         }
-        $created_at = 0; //this need to has an extra  function that detects time
+        $created_at = now(); //this need to has an extra  function that detects time
 
         //Creating the php file
         $filePath = resource_path('views/projects/' . $name . '.blade.php');
