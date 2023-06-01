@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('framework');
             $table->string('img')->default('/projects/defaultImg.svg');
             $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

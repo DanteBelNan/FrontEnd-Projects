@@ -13,7 +13,8 @@ class Project extends Model
         'desc',
         'framework',
         'img',
-        'createdAt',
+        'created_at',
+        'updated_at',
     ];
 
 }

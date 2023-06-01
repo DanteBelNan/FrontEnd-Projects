@@ -36,6 +36,7 @@ class ProjectsController extends Controller
             $project->img = '/img/projects/' . $filename;
         }
         $created_at = now(); //this need to has an extra  function that detects time
+        $updated_at = now();
 
         //Creating the php file
         $filePath = resource_path('views/projects/' . $name . '.blade.php');
@@ -51,6 +52,7 @@ class ProjectsController extends Controller
         $project->desc = $desc;
         $project->framework = $framework;
         $project->created_at = $created_at;
+        $project->updated_at = $updated_at;
         $project->save();
 
         return redirect()->route('projects.show', $project->id);
