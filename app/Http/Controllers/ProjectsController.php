@@ -56,6 +56,6 @@ class ProjectsController extends Controller
         $project->save();
 
         return redirect()->route('projects.show', $project->id);
-
+    
     }
 }
