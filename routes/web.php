@@ -21,5 +21,8 @@ Route::prefix('home')->namespace('home')->group(function () {
 
 Route::prefix('projects')->namespace('projects')->group(function(){
     //Route::get('/PRNAME', [ProjectsController::class, 'method'])->name('projects.PRNAME');
+    //poner el show
+    //poner el create
+    //poner el store
 
 });
