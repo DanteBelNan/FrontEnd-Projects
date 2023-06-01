@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name', 50);
             $table->string('desc', 500)->nullable();
             $table->string('framework');
-            $table->string('img')->default('defaultAvatar');
+            $table->string('img')->default('/projects/defaultImg.svg');
             $table->timestamp('created_at')->nullable();
         });
     }
