@@ -26,4 +26,7 @@ Route::prefix('projects')->namespace('projects')->group(function(){
     Route::post('/store', [ProjectsController::class, 'store'])->name('projects.store');
     Route::get('/edit/{id}', [ProjectsController::class, 'edit'])->name('projects.edit');
     Route::post('/update', [ProjectsController::class, 'update'])->name('projects.update');
+    Route::get('/delete/{id}' , [ProjectsController::class, 'delete'])->name('projects.delete');
+    Route::post('/destroy' , [ProjectsController::class, 'destroy'])->name('projects.destroy');
+    
 });
