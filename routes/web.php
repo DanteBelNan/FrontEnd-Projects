@@ -24,4 +24,6 @@ Route::prefix('projects')->namespace('projects')->group(function(){
     Route::get('/{name}', [ProjectsController::class, 'show'])->name('projects.show');
     Route::get('/create', [ProjectsController::class, 'create'])->name('projects.create');
     Route::post('/store', [ProjectsController::class, 'store'])->name('projects.store');
+    Route::get('/edit/{id}', [ProjectsController::class, 'edit'])->name('projects.edit');
+    Route::post('/update', [ProjectsController::class, 'update'])->name('projects.update');
 });
