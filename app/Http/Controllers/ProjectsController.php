@@ -81,4 +81,21 @@ class ProjectsController extends Controller
         }
         return redirect()->route('home.index')->with('success', 'proyecto ' . $project->name . 'editado correctamente.');
     }
+
+    public function delete(Request $request){
+        $id = $request->input('id');
+        $project = Project::findOrFail($id);
+        return view('projects/delete', compact('player'));
+    }
+    public function destroy(Request $request)
+    {
+        $id = $request->input('id');
+        $project = Project::find($id);
+        $img = $project->img;
+        if ($img !== null) {
+            unlink($img);
+        }
+        $project->delete();
+        return redirect()->route('home.index')->with('success', 'proyecto ' . $project->name . 'eliminado correctamente.');
+    }
 }
