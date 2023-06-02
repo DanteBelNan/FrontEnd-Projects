@@ -11,7 +11,7 @@ class ProjectsController extends Controller
 {
     //
     public function show($id){
-        $project = Project::findorFail($id);
+        $project = Project::findOrFail($id);
         $name = $project->name;
         return view('projects.'.$name , [
             'project' => $project
@@ -56,6 +56,29 @@ class ProjectsController extends Controller
         $project->save();
 
         return redirect()->route('projects.show', $project->id);
-    
+    }
+
+    public function edit(Request $request){
+        $id = $request->input('id');
+        $project = Project::findOrFail($id);
+
+        return view('projects/edit', compact('player'));
+    }
+
+    public function update(Request $request){
+        $id = $request->input('id');
+        $project = Project::findOrFail($id);
+
+        $project->fill($request->all());
+        if($request->hasFile('img')){
+            $oldImg = $project->img;
+            $img = $request->file('img');
+            $filename = $project->name . '.' . $img->getClientOriginalExtension();
+            $filePath = resource_path('views/projects/');
+            $image = Image::make($img)->resize(500, 500); //composer require intervention/image need to be done
+            $image->save($filePath);
+            $project->img = '/img/projects/' . $filename;
+        }
+        return redirect()->route('home.index')->with('success', 'proyecto ' . $project->name . 'editado correctamente.');
     }
 }
