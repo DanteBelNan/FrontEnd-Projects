@@ -17,6 +17,7 @@ use App\Http\Controllers\ProjectsController;
 
 Route::prefix('home')->namespace('home')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
+    Route::post('/',[HomeController::class, 'login'])->name('home.login');
 });
 
 Route::prefix('projects')->namespace('projects')->group(function(){
