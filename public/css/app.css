@@ -254,6 +254,15 @@ a{
     transition: transform 0.5s ease;
 }
   
+
+.login{
+    position: absolute;
+    top:25%;
+    left:25%;
+    background-color: red;
+    min-width: 50%;
+    min-height: 50%;
+}
   
   
   

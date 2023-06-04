@@ -1,7 +1,7 @@
 @extends('layouts.layouts')
 
 @section('content')
-
+<!-- DEBE HABER UN MODAL QUE APAREZCA AL CLICKEAR MI FOTO, EN LA QUE APAREZCA UN MENU DE LOGIN-->
 <div class="main-body">
     <!-- Sidebar -->
     <aside class="sidebar-left">
@@ -95,8 +95,24 @@
             </div>
         </div>
 
-        
+
     </main>
+</div>
+<div class="login">
+    <form method="POST" action="{{ route('home.login') }}">
+        @csrf
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required autofocus>
+        </div>
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <input type="submit" value="Iniciar sesión">
+        </div>
+    </form>
 </div>
     
 
