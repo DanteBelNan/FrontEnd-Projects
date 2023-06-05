@@ -103,13 +103,13 @@
 
     <form method="POST" action="{{ route('home.login') }}">
         @csrf
-        <div class="mail-container">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required autofocus>
+        <div class="mail-container img-login">
+            <img src=" {{asset('img/login/user.svg')}}">
+            <input type="email" id="email" name="email" placeholder="User / Email" required autofocus>
         </div>
-        <div class="pwd-container">
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
+        <div class="pwd-container img-login">
+            <img src=" {{asset('img/login/lock.svg')}}">
+            <input type="password" id="password" name="password" placeholder="Password" required>
         </div>
         <div class="btn-container">
             <input type="submit" value="Iniciar sesión">

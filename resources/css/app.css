@@ -268,13 +268,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 33%;
 
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hdn {
@@ -289,6 +284,56 @@ a{
     max-height: 40vh;
     transition: max-height 1s ease-in-out, min-height 1s ease-in-out; /* Combina las transiciones en una sola regla */
 }
+
+.mail-container{
+
+}
+
+.pwd-container{
+
+}
+.btn-container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-login{
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 4%;
+    font-size: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2vh solid #ccc;
+    outline: none;
+}
+
+/* Estilo para los campos de contraseña en el foco */
+input[type="email"]:focus {
+    border-bottom-color: blue;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 4%;
+    font-size: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2vh solid #ccc;
+    outline: none;
+}
+
+/* Estilo para los campos de contraseña en el foco */
+input[type="password"]:focus {
+    border-bottom-color: blue;
+}
+
 
   
   
