@@ -11,7 +11,7 @@
         </div>
         <div class="profile-photo">
             <!--<img src=" {{asset('img/profile-card/bg-pattern-top.svg')}}" alt="profile-top-img">-->
-            <img src=" {{asset('img/profile-card/profile-photo.jpg')}}" alt="profile-photo">
+            <img id="profile-data" src=" {{asset('img/profile-card/profile-photo.jpg')}}" alt="profile-photo">
         </div>
         <div class="profile-data">
             <div class="name">Dante Beltrán</div>
@@ -68,7 +68,8 @@
             </div>
         </div>
         <!-- aside Scripts -->
-        <script src="{{ asset('js/dropdown.js') }}"></script> 
+        <script src="{{ asset('js/dropdown.js') }}"></script>
+        <script src="{{ asset('js/openLogin.js') }}"></script>  
         
     </aside>
 
@@ -98,18 +99,19 @@
 
     </main>
 </div>
-<div class="login">
+<div class="login hdn">
+
     <form method="POST" action="{{ route('home.login') }}">
         @csrf
-        <div>
+        <div class="mail-container">
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" required autofocus>
         </div>
-        <div>
+        <div class="pwd-container">
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required>
         </div>
-        <div>
+        <div class="btn-container">
             <input type="submit" value="Iniciar sesión">
         </div>
     </form>

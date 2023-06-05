@@ -257,12 +257,39 @@ a{
 
 .login{
     position: absolute;
-    top:25%;
-    left:25%;
-    background-color: red;
-    min-width: 50%;
-    min-height: 50%;
+    top:30%;
+    left:40%;
+    background-color: #f2f2f2;
+    border: 0.2vw solid #ccc;
+    border-radius: 2vw;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hdn {
+    max-height: 0vh;
+    min-height: 0vh;
+    transition: max-height 0.4s ease-out, min-height 0.4s ease-out; /* Combina las transiciones en una sola regla */
+    border: 0vw solid #ccc;
+}
+
+.shwn {
+    min-height: 40vh;
+    max-height: 40vh;
+    transition: max-height 1s ease-in-out, min-height 1s ease-in-out; /* Combina las transiciones en una sola regla */
+}
+
   
   
   
