@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use Illuminate\Support\Facades\Config;
 
 class HomeController extends Controller
 {
@@ -13,9 +13,15 @@ class HomeController extends Controller
 
     public function login(Request $request){
         $user = $request->input('email');
-        $password = $request->input('password');
+        $pass = $request->input('password');
         
-        
-        return view('home.index');
+        $adminUser = Config::get('admin_user');
+        $adminPass = Config::get('admin_password');
+        //return "Usuario: $adminUser, Contraseña: $adminPass";
+        if($user == $adminUser && $pass == $adminPass){
+            return redirect()->route('home.index')->with('success', 'Admin logeado correctamente');
+        }else{
+            return redirect()->route('home.index')->with('error', 'Nombre o usuario incorrecto');
+        }
     }
 }

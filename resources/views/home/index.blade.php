@@ -3,6 +3,18 @@
 @section('content')
 <!-- DEBE HABER UN MODAL QUE APAREZCA AL CLICKEAR MI FOTO, EN LA QUE APAREZCA UN MENU DE LOGIN-->
 
+@if(session('success'))
+    <div class="alert alert-success">
+        <strong>{{ session('success') }}</strong>
+    </div>
+@endif
+
+@if(session('error'))
+    <div class="alert alert-error">
+        <strong>{{ session('error') }}</strong>
+    </div>
+@endif
+
 
 <div class="main-body">
     <!-- Sidebar -->

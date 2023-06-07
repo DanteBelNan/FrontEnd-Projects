@@ -334,6 +334,30 @@ input[type="password"]:focus {
     border-bottom-color: blue;
 }
 
+.alert{
+    position: absolute;
+    width: 90vw;
+    height: 4vw;
+    border-radius: 6px;
+    top: 10%;
+    left: 5%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-success{
+    background-color: rgb(29, 218, 29);
+    border-color: rgb(32, 238, 32);
+}
+
+.alert-error{
+    background-color: rgb(214, 21, 21);
+    border-color: rgb(233, 23, 23);
+}
+
 
   
   
