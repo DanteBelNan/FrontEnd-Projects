@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const profileData = document.getElementById("profile-data");
+    const profileData = document.querySelector(".openLogin");
     const login = document.querySelector(".login");
 
     profileData.addEventListener("click", function() {

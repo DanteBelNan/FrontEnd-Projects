@@ -2,6 +2,8 @@
 
 @section('content')
 <!-- DEBE HABER UN MODAL QUE APAREZCA AL CLICKEAR MI FOTO, EN LA QUE APAREZCA UN MENU DE LOGIN-->
+
+
 <div class="main-body">
     <!-- Sidebar -->
     <aside class="sidebar-left">
@@ -11,7 +13,7 @@
         </div>
         <div class="profile-photo">
             <!--<img src=" {{asset('img/profile-card/bg-pattern-top.svg')}}" alt="profile-top-img">-->
-            <img id="profile-data" src=" {{asset('img/profile-card/profile-photo.jpg')}}" alt="profile-photo">
+            <img src=" {{asset('img/profile-card/profile-photo.jpg')}}" alt="profile-photo">
         </div>
         <div class="profile-data">
             <div class="name">Dante Beltrán</div>
@@ -38,7 +40,7 @@
                         <div class="dropdown-item" onclick="selectOption(this,3)">PHP </div>
                         <div class="dropdown-item" onclick="selectOption(this,4)">HTML </div>
                         <div class="dropdown-item" onclick="selectOption(this,5)">CSS </div>
-                        <div class="dropdown-item" onclick="selectOption(this,6)">JS </div>
+                        <div class="dropdown-item openLogin" onclick="selectOption(this,6)">JS </div>
                         <div class="dropdown-item" onclick="selectOption(this,7)">SQL </div>
                     </div>
             </div>
