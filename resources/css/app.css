@@ -254,6 +254,125 @@ a{
     transition: transform 0.5s ease;
 }
   
+
+.login{
+    position: absolute;
+    top:30%;
+    left:40%;
+    background-color: #f2f2f2;
+    border: 0.2vw solid #ccc;
+    border-radius: 2vw;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 33%;
+
+}
+
+.hdn {
+    max-height: 0vh;
+    min-height: 0vh;
+    transition: max-height 0.4s ease-out, min-height 0.4s ease-out; /* Combina las transiciones en una sola regla */
+    border: 0vw solid #ccc;
+}
+
+.shwn {
+    min-height: 40vh;
+    max-height: 40vh;
+    transition: max-height 1s ease-in-out, min-height 1s ease-in-out; /* Combina las transiciones en una sola regla */
+}
+
+.mail-container{
+
+}
+
+.pwd-container{
+
+}
+.btn-container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-login{
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 4%;
+    font-size: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2vh solid #ccc;
+    outline: none;
+}
+
+/* Estilo para los campos de contraseña en el foco */
+input[type="email"]:focus {
+    border-bottom-color: blue;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 4%;
+    font-size: 90%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.2vh solid #ccc;
+    outline: none;
+
+}
+
+/* Estilo para los campos de contraseña en el foco */
+input[type="password"]:focus {
+    border-bottom-color: blue;
+}
+
+input[type=submit]{
+    width: 50%;
+    height: 40%;
+    font-size: 90%;
+    background-color: transparent;
+    border: none;
+    color: #888;
+    border-bottom: 0.2vh solid #ccc;
+    cursor: pointer
+}
+
+.alert{
+    position: absolute;
+    width: 90vw;
+    height: 4vw;
+    border-radius: 6px;
+    top: 10%;
+    left: 5%;
+    box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
+    font-size: larger;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.alert-success{
+    background-color: rgb(29, 218, 29);
+    border-color: rgb(32, 238, 32);
+}
+
+.alert-error{
+    background-color: rgb(214, 21, 21);
+    border-color: rgb(233, 23, 23);
+}
+
+
   
   
   

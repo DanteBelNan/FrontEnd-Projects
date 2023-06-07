@@ -17,6 +17,7 @@ use App\Http\Controllers\ProjectsController;
 
 Route::prefix('home')->namespace('home')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home.index');
+    Route::post('/',[HomeController::class, 'login'])->name('home.login');
 });
 
 Route::prefix('projects')->namespace('projects')->group(function(){
@@ -24,4 +25,9 @@ Route::prefix('projects')->namespace('projects')->group(function(){
     Route::get('/{name}', [ProjectsController::class, 'show'])->name('projects.show');
     Route::get('/create', [ProjectsController::class, 'create'])->name('projects.create');
     Route::post('/store', [ProjectsController::class, 'store'])->name('projects.store');
+    Route::get('/edit/{id}', [ProjectsController::class, 'edit'])->name('projects.edit');
+    Route::post('/update', [ProjectsController::class, 'update'])->name('projects.update');
+    Route::get('/delete/{id}' , [ProjectsController::class, 'delete'])->name('projects.delete');
+    Route::post('/destroy' , [ProjectsController::class, 'destroy'])->name('projects.destroy');
+    
 });

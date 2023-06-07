@@ -1,6 +1,20 @@
 @extends('layouts.layouts')
 
 @section('content')
+<!-- DEBE HABER UN MODAL QUE APAREZCA AL CLICKEAR MI FOTO, EN LA QUE APAREZCA UN MENU DE LOGIN-->
+
+@if(session('success'))
+    <div class="alert alert-success">
+        <strong>{{ session('success') }}</strong>
+    </div>
+@endif
+
+@if(session('error'))
+    <div class="alert alert-error">
+        <strong>{{ session('error') }}</strong>
+    </div>
+@endif
+
 
 <div class="main-body">
     <!-- Sidebar -->
@@ -38,7 +52,7 @@
                         <div class="dropdown-item" onclick="selectOption(this,3)">PHP </div>
                         <div class="dropdown-item" onclick="selectOption(this,4)">HTML </div>
                         <div class="dropdown-item" onclick="selectOption(this,5)">CSS </div>
-                        <div class="dropdown-item" onclick="selectOption(this,6)">JS </div>
+                        <div class="dropdown-item openLogin" onclick="selectOption(this,6)">JS </div>
                         <div class="dropdown-item" onclick="selectOption(this,7)">SQL </div>
                     </div>
             </div>
@@ -68,7 +82,8 @@
             </div>
         </div>
         <!-- aside Scripts -->
-        <script src="{{ asset('js/dropdown.js') }}"></script> 
+        <script src="{{ asset('js/dropdown.js') }}"></script>
+        <script src="{{ asset('js/openLogin.js') }}"></script>  
         
     </aside>
 
@@ -95,8 +110,25 @@
             </div>
         </div>
 
-        
+
     </main>
+</div>
+<div class="login hdn">
+
+    <form method="POST" action="{{ route('home.login') }}">
+        @csrf
+        <div class="mail-container img-login">
+            <img src=" {{asset('img/login/user.svg')}}">
+            <input type="email" id="email" name="email" placeholder="User / Email" required autofocus>
+        </div>
+        <div class="pwd-container img-login">
+            <img src=" {{asset('img/login/lock.svg')}}">
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="btn-container">
+            <input type="submit" value="Iniciar sesión">
+        </div>
+    </form>
 </div>
     
 
