@@ -327,11 +327,23 @@ input[type="password"] {
     border: none;
     border-bottom: 0.2vh solid #ccc;
     outline: none;
+
 }
 
 /* Estilo para los campos de contraseña en el foco */
 input[type="password"]:focus {
     border-bottom-color: blue;
+}
+
+input[type=submit]{
+    width: 50%;
+    height: 40%;
+    font-size: 90%;
+    background-color: transparent;
+    border: none;
+    color: #888;
+    border-bottom: 0.2vh solid #ccc;
+    cursor: pointer
 }
 
 .alert{
@@ -343,9 +355,11 @@ input[type="password"]:focus {
     left: 5%;
     box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
     font-size: larger;
-    text-align: center;
-    justify-content: center;
+    
+    display: flex;
     align-items: center;
+    justify-content: center;
+    
 }
 
 .alert-success{
