@@ -13,12 +13,11 @@ class HomeController extends Controller
 
     public function login(Request $request){
         $user = $request->input('email');
-        $pass = $request->input('password');
+        $password = $request->input('password');
         
-        $adminUser = Config::get('admin_user');
-        $adminPass = Config::get('admin_password');
-        //return "Usuario: $adminUser, Contraseña: $adminPass";
-        if($user == $adminUser && $pass == $adminPass){
+        $adminUser = env('ADMIN_USER');
+        $adminPassword = env('ADMIN_PASSWORD');
+        if($user == $adminUser && $password == $adminPassword){
             return redirect()->route('home.index')->with('success', 'Admin logeado correctamente');
         }else{
             return redirect()->route('home.index')->with('error', 'Nombre o usuario incorrecto');
