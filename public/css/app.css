@@ -265,11 +265,31 @@ a{
     box-shadow: 0 2vh 4vh rgba(0, 0, 0, 0.2);
     overflow: hidden;
     min-height: 40vh;
+    min-width: 33%;
+
+}
+
+.login-header{
+    display: flex;
+    margin-left: 88%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.login-header img{
+    min-height: 60%;
+    min-width: 60%;
+
+    max-height: 60%;
+    max-width: 60%;
+
+    cursor: pointer;
+}
+
+.login-body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 33%;
-
 }
 
 .hdn {

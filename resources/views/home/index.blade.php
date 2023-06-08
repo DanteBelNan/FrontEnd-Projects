@@ -115,20 +115,25 @@
 </div>
 <div class="login hdn">
 
-    <form method="POST" action="{{ route('home.login') }}">
-        @csrf
-        <div class="mail-container img-login">
-            <img src=" {{asset('img/login/user.svg')}}">
-            <input type="email" id="email" name="email" placeholder="User / Email" required autofocus>
-        </div>
-        <div class="pwd-container img-login">
-            <img src=" {{asset('img/login/lock.svg')}}">
-            <input type="password" id="password" name="password" placeholder="Password" required>
-        </div>
-        <div class="btn-container">
-            <input type="submit" value="Iniciar sesión">
-        </div>
-    </form>
+    <div class="login-header">
+        <img src=" {{asset('img/login/close.svg')}}" class="closeButton">
+    </div>
+    <div class="login-body">
+        <form method="POST" action="{{ route('home.login') }}">
+            @csrf
+            <div class="mail-container img-login">
+                <img src=" {{asset('img/login/user.svg')}}">
+                <input type="email" id="email" name="email" placeholder="User / Email" required autofocus>
+            </div>
+            <div class="pwd-container img-login">
+                <img src=" {{asset('img/login/lock.svg')}}">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="btn-container">
+                <input type="submit" value="Iniciar sesión">
+            </div>
+        </form>
+    </div>
 </div>
     
 
