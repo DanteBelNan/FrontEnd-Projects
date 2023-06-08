@@ -29,8 +29,8 @@ cp .env .env.example
 
 4. Fill the database slots and the admin credentials
 
-5. Run make build
+5. Run migrations
 ```shell
-make build
+php artisan migrate
 ```
 ### Enjoy the project
