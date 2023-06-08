@@ -134,6 +134,9 @@
             </div>
         </form>
     </div>
+    <div class="login-footer">
+        This is a login form for an admin view
+    </div>
 </div>
     
 
