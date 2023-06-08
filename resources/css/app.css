@@ -292,6 +292,13 @@ a{
     align-items: center;
 }
 
+.login-footer{
+    color: #999898;
+    text-align: center;
+    margin-top: 3%;
+
+}
+
 .hdn {
     max-height: 0vh;
     min-height: 0vh;
