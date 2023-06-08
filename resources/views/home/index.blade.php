@@ -52,7 +52,7 @@
                         <div class="dropdown-item" onclick="selectOption(this,3)">PHP </div>
                         <div class="dropdown-item" onclick="selectOption(this,4)">HTML </div>
                         <div class="dropdown-item" onclick="selectOption(this,5)">CSS </div>
-                        <div class="dropdown-item openLogin" onclick="selectOption(this,6)">JS </div>
+                        <div class="dropdown-item loginLock1" onclick="selectOption(this,6)">JS </div>
                         <div class="dropdown-item" onclick="selectOption(this,7)">SQL </div>
                     </div>
             </div>
@@ -69,7 +69,7 @@
             </div>
 
             <div class="contact">
-                <div>Contact me </div>
+                <div class="loginLock2">Contact me </div>
                 <a target="_blank" href="https://www.linkedin.com/in/dante-beltran-bb9626216/"> 
                     <img src=" {{asset('img/contact-button/linkedin.svg')}}">
                 </a>
