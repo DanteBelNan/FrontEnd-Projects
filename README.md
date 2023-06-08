@@ -7,11 +7,7 @@ This is a repo to handle own repositories, with admin view to create new ones, o
 ## Build the project
 
 ### Requirements
-PHP
-Composer
-Web Server (like XAMPP)
-Database (MySQL for example)
-Git
+PHP, Composer, Web Server (like XAMPP), Database (MySQL for example) and Git
 
 
 ### Local environment setup
