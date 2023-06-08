@@ -4,17 +4,6 @@
 
 This is a repo to handle own repositories, with admin view to create new ones, or user view to watch them
 
-## Installing / Getting started
-
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
-
-```shell
-commands here
-```
-
-Here you should say what actually happens when you execute the code above.
-
 ## Build the project
 
 ### Requirements
@@ -31,8 +20,6 @@ Git
 
 ```shell
 git https://github.com/DanteBelNan/FrontEnd-Projects.git
-cd your-project/
-packagemanager install
 ```
 2. Move into the project
 ```shell
