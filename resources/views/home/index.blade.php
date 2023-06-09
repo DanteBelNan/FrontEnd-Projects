@@ -2,13 +2,12 @@
 @section('navbar')
 
 @if(session('navbar-admin'))
-    <a class="" href="{{ route('home.index') }}">Admin panel</a>
+    <a class="" href="{{ route('home.adminPanel', ['logged' => true]) }}">Admin panel</a>
 @endif
 
 @endsection
 
 @section('content')
-<!-- DEBE HABER UN MODAL QUE APAREZCA AL CLICKEAR MI FOTO, EN LA QUE APAREZCA UN MENU DE LOGIN-->
 
 @if(session('success'))
     <div class="alert alert-success">

@@ -26,7 +26,19 @@ class HomeController extends Controller
         }else{
             $logged = false;
             return redirect()->route('home.index')->with([
-                'error' => 'Nombre o contraseña incorrecta',
+                'error' => 'Credenciales incorrectas',
+                'logged' => $logged
+            ]);
+        }
+    }
+
+    public function adminPanel($logged = false){
+
+        if($logged){
+            return view('home.adminPanel', compact('logged'));
+        }else{
+            return redirect()->route('home.index')->with([
+                'error' => 'Usted no inicio sesion como para entrar al panel de admin',
                 'logged' => $logged
             ]);
         }
