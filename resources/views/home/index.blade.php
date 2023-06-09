@@ -98,7 +98,6 @@
     <main class="sidebar-right">
         <div class="card-container">
             <div class="card">
-
             </div>
         </div>
         <div class="card-container">
