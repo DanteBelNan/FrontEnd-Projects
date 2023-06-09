@@ -18,7 +18,7 @@ class HomeController extends Controller
         $adminUser = env('ADMIN_USER');
         $adminPassword = env('ADMIN_PASSWORD');
         if($user == $adminUser && $password == $adminPassword){
-            return redirect()->route('home.index')->with('success', 'Admin logeado correctamente');
+            return redirect()->route('home.index')->with('navbar-admin', 'Admin logeado correctamente');
         }else{
             return redirect()->route('home.index')->with('error', 'Nombre o usuario incorrecto');
         }
