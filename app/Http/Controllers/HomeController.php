@@ -32,8 +32,8 @@ class HomeController extends Controller
         }
     }
 
-    public function adminPanel($logged = false){
-
+    public function adminPanel(Request $request){
+        $logged = $request->input('logged');
         if($logged){
             return view('home.adminPanel', compact('logged'));
         }else{
