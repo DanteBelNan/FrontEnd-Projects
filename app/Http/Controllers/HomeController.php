@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 
 class HomeController extends Controller
 {
     public function index(){
-        return view('home.index');
+        $projects = Project::all();
+        return view('home.index', compact('projects'));
     }
 
     public function login(Request $request){
