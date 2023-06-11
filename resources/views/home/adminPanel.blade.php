@@ -9,4 +9,25 @@
 
 @section('content')
 
+<div class="main-body">
+    <!-- Sidebar -->
+    <aside class="sidebar-left">
+        
+        
+    </aside>
+
+    <main class="sidebar-right">
+        @foreach ($projects as $key=>$project)
+        <div class="card-container">
+            <div class="card">
+                <div class="title">{{$project->name}} </div>
+                <div class="framework">{{$project->framework}} </div>
+            </div>
+        </div>
+        @endforeach
+
+
+
+    </main>
+</div>
 @endsection
