@@ -36,8 +36,9 @@ class HomeController extends Controller
 
     public function adminPanel(Request $request){
         $logged = $request->input('logged');
+        $projects = Project::all();
         if($logged){
-            return view('home.adminPanel', compact('logged'));
+            return view('home.adminPanel', compact('logged', 'projects'));
         }else{
             return redirect()->route('home.index')->with([
                 'error' => 'Usted no inicio sesion como para entrar al panel de admin',
