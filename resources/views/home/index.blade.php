@@ -7,6 +7,7 @@
         <input type="hidden" value=true name="logged" id="logged">
         <button type="submit" class="navbar-button">Admin Panel</button>
     </form>
+    
 @endif
 
 @endsection
@@ -18,6 +19,7 @@
         <div class="alert-header"> <img src=" {{asset('img/login/close.svg')}}" class="closeButtonAl"></div>
         <div class="alert-body">{{ session('success') }} </div>
     </div>
+    <script src="{{ asset('js/closeAlert.js') }}"></script>  
 @endif
     
 @if(session('error'))
@@ -25,6 +27,7 @@
         <div class="alert-header"> <img src=" {{asset('img/login/close.svg')}}" class="closeButtonAl"></div>
         <div class="alert-body">{{ session('error') }} </div>
     </div>
+    <script src="{{ asset('js/closeAlert.js') }}"></script>  
 @endif
 
 
@@ -96,7 +99,7 @@
         <!-- aside Scripts -->
         <script src="{{ asset('js/dropdown.js') }}"></script>
         <script src="{{ asset('js/loginForm.js') }}"></script>
-        <script src="{{ asset('js/closeAlert.js') }}"></script>  
+        
         
     </aside>
 

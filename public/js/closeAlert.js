@@ -1,4 +1,4 @@
-const closeButton = document.querySelector('.closeButton');
+const closeButton = document.querySelector('.closeButtonAl');
 const alertDiv = document.querySelector('.alert');
 
 
