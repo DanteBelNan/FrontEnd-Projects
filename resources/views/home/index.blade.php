@@ -17,12 +17,13 @@
 @endif
 <div class="alert alert-success">
     <div class="alert-header"> <img src=" {{asset('img/login/close.svg')}}" class="closeButton"></div>
-    <div class="alert-body"> <strong>test</strong> </div>
+    <div class="alert-body">{{ session('success') }} </div>
 </div>
     
     @if(session('error'))
     <div class="alert alert-error">
-        <strong>{{ session('error') }}</strong>
+        <div class="alert-header"> <img src=" {{asset('img/login/close.svg')}}" class="closeButton"></div>
+        <div class="alert-body">{{ session('error') }} </div>
     </div>
     @endif
 
