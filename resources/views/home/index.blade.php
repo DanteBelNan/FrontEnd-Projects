@@ -1,18 +1,33 @@
 @extends('layouts.layouts')
+@section('navbar')
+
+@if(session('navbar-admin'))
+    <form action="{{ route('home.adminPanel')}}" method="post" id="adminPanel">
+        @csrf
+        <input type="hidden" value=true name="logged" id="logged">
+        <button type="submit" class="navbar-button">Admin Panel</button>
+    </form>
+    
+@endif
+
+@endsection
 
 @section('content')
-<!-- DEBE HABER UN MODAL QUE APAREZCA AL CLICKEAR MI FOTO, EN LA QUE APAREZCA UN MENU DE LOGIN-->
 
 @if(session('success'))
     <div class="alert alert-success">
-        <strong>{{ session('success') }}</strong>
+        <div class="alert-header"> <img src=" {{asset('img/login/close.svg')}}" class="closeButtonAl"></div>
+        <div class="alert-body">{{ session('success') }} </div>
     </div>
+    <script src="{{ asset('js/closeAlert.js') }}"></script>  
 @endif
-
+    
 @if(session('error'))
     <div class="alert alert-error">
-        <strong>{{ session('error') }}</strong>
+        <div class="alert-header"> <img src=" {{asset('img/login/close.svg')}}" class="closeButtonAl"></div>
+        <div class="alert-body">{{ session('error') }} </div>
     </div>
+    <script src="{{ asset('js/closeAlert.js') }}"></script>  
 @endif
 
 
@@ -83,32 +98,22 @@
         </div>
         <!-- aside Scripts -->
         <script src="{{ asset('js/dropdown.js') }}"></script>
-        <script src="{{ asset('js/openLogin.js') }}"></script>  
+        <script src="{{ asset('js/loginForm.js') }}"></script>
+        
         
     </aside>
 
     <!-- Main -->
     <main class="sidebar-right">
+        @foreach ($projects as $key=>$project)
         <div class="card-container">
             <div class="card">
-
+                <div class="title">{{$project->name}} </div>
+                <div class="framework">{{$project->framework}} </div>
             </div>
         </div>
-        <div class="card-container">
-            <div class="card">
+        @endforeach
 
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-
-            </div>
-        </div>
 
 
     </main>

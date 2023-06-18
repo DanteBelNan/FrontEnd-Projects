@@ -17,7 +17,9 @@
 
     <!-- nav -->
     <nav class="navbar">
-        <a class="" href="{{ route('home.index') }}">Home</a>
+        <form action="{{ route('home.index')}}" method="post" id="adminPanel">
+            <button type="submit" class="navbar-button">Home</button>
+        </form>
 
         @yield('navbar')   
     </nav>

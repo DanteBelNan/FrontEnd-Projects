@@ -18,7 +18,22 @@ a{
 
 .navbar{
     min-height: 3.5vh;
+    display: flex;
 }
+
+.navbar-button {
+    margin-right: 2%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
 .main-body {
     display: flex;
 }
@@ -266,7 +281,14 @@ a{
     overflow: hidden;
     min-height: 40vh;
     min-width: 33%;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.login div{
+    min-height: 33%;
+    max-height: 33%;
 }
 
 .login-header{
@@ -386,7 +408,21 @@ input[type=submit]{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
+}
+
+.alert-header{
+    display: flex;
+    margin-left: 88%;
+}
+
+.alert-header img{
+    cursor: pointer;
+}
+
+.alert-body{
+    margin-top: -1%;
 }
 
 .alert-success{
