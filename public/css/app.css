@@ -262,12 +262,16 @@ a{
     transition: transform 0.5s ease;
     border: 0.3vw solid rgba(128, 128, 128, 0.5);
     box-shadow: 2vw 2vh 4vh rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .card:hover{
     transform: scale(112%);
     transition: transform 0.5s ease;
+
 }
+
+
   
 
 .login{
