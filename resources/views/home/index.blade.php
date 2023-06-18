@@ -14,16 +14,17 @@
 @section('content')
 
 @if(session('success'))
-    <div class="alert alert-success">
-        <strong>{{ session('success') }}</strong>
-    </div>
 @endif
-
-@if(session('error'))
+<div class="alert alert-success">
+    <div class="alert-header"> <img src=" {{asset('img/login/close.svg')}}" class="closeButton"></div>
+    <div class="alert-body"> <strong>test</strong> </div>
+</div>
+    
+    @if(session('error'))
     <div class="alert alert-error">
         <strong>{{ session('error') }}</strong>
     </div>
-@endif
+    @endif
 
 
 <div class="main-body">
@@ -93,7 +94,8 @@
         </div>
         <!-- aside Scripts -->
         <script src="{{ asset('js/dropdown.js') }}"></script>
-        <script src="{{ asset('js/openLogin.js') }}"></script>  
+        <script src="{{ asset('js/openLogin.js') }}"></script>
+        <script src="{{ asset('js/closeAlert.js') }}"></script>  
         
     </aside>
 

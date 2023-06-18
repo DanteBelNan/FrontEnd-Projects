@@ -23,7 +23,8 @@ class HomeController extends Controller
             $logged = true;
             return redirect()->route('home.index')->with([
                 'navbar-admin' => 'Admin logeado correctamente',
-                'logged' => $logged
+                'logged' => $logged,
+                'success' => 'Admin logeado correctamente',
             ]);
         }else{
             $logged = false;

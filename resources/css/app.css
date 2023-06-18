@@ -408,7 +408,21 @@ input[type=submit]{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     
+}
+
+.alert-header{
+    display: flex;
+    margin-left: 88%;
+}
+
+.alert-header img{
+    cursor: pointer;
+}
+
+.alert-body{
+    margin-top: -1%;
 }
 
 .alert-success{
