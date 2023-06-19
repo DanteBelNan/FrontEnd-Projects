@@ -2,12 +2,11 @@
 @section('navbar')
 
 @if(session('navbar-admin'))
-    <form action="{{ route('home.adminPanel')}}" method="post" id="adminPanel">
-        @csrf
-        <input type="hidden" value=true name="logged" id="logged">
-        <button type="submit" class="navbar-button">Admin Panel</button>
-    </form>
-    
+<form action="{{ route('home.adminPanel')}}" method="post" id="adminPanel">
+    @csrf
+    <input type="hidden" value=true name="logged" id="logged">
+    <button type="submit" class="navbar-button">Admin Panel</button>
+</form>
 @endif
 
 @endsection

@@ -19,7 +19,8 @@ class ProjectsController extends Controller
     }
     public function create(){
         //redirects to form
-        return view('players.create');
+        
+        return view('projects.create');
     }
     public function store(Request $request){
         //Declaring the variables of the request && creating project
